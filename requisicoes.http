@@ -1,0 +1,35 @@
+###
+GET http://localhost:3001/produtos
+
+###
+POST http://localhost:3001/produtos 
+content-type: application/json
+
+{
+    "nome": "Caneta Bic",
+    "descricao": "Caneta Bic esferográfica azul",
+    "preco": 1.99
+}
+
+###
+POST http://localhost:3001/produtos 
+content-type: application/json
+
+{
+    "nome": "Lapiseira Faber castell",
+    "descricao": "Lapiseira Faber castell 1.5",
+    "preco": 6.99
+}
+
+###
+PATCH http://localhost:3001/produtos/1 
+content-type: application/json
+
+{
+    "nome": "Caneta Bic esferográfica",
+    "descricao": "Caneta Bic esferográfica azul",
+    "preco": 1.99
+}
+
+###
+DELETE http://localhost:3001/produtos/5
